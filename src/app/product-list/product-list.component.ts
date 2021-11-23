@@ -16,21 +16,21 @@ export class ProductListComponent implements OnInit {
       id: 1,
       title: 'Producto 1',
       price: 200,
-      text: 'Super desayuno',
+      text: 'Super desayuno nutritivo con todos los nutrientes necesarios para ser un mago universal',
       image: 'assets/images/img1.jpg'
     },
     {
       id: 2,
       title: 'Producto 2',
       price: 200,
-      text: 'Super desayuno',
+      text: 'Este es el segundo mejor desayuno de nuestra carta. Si lo comes te llenara de placer',
       image: 'assets/images/img2.jpg'
     },
     {
       id: 3,
       title: 'Producto 3',
       price: 200,
-      text: 'Super desayuno',
+      text: 'Este desayuno es para los mas golosos y sabrosones',
       image: 'assets/images/img3.jpg'
     }
   ];
