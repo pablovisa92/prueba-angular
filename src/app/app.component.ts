@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 
-interface User {
-  name: string;
-  age: number;
-  isSingle: boolean;
-  avatar: string;
-}
+import { User } from './models/users.model'
 
 @Component({
   selector: 'app-root',
@@ -18,7 +13,7 @@ export class AppComponent {
 
   rockBands : string[]= ['nirvana','los prisioneros'];
 
-  users: User[] = [
+  /* users: User[] = [
     {
       name: 'Nicolas',
       age: 26,
@@ -31,7 +26,7 @@ export class AppComponent {
       isSingle: true,
       avatar: 'assets/images/img2.jpg'
     }
-  ];
+  ]; */
   rockBandName='';
 
   changeTitle() {

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,10 @@ import { ReversePipe } from './reverse.pipe';
 import { DateFormatPipe } from './date-format.pipe';
 import { ListComponent } from './components/list/list.component';
 import { FibonacciPipe } from './pipes/fibonacci.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
+import { UsersListComponent } from './components/users-list/users-list.component';
+import { TodoComponent } from './components/todo/todo.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +24,17 @@ import { FibonacciPipe } from './pipes/fibonacci.pipe';
     ReversePipe,
     DateFormatPipe,
     ListComponent,
-    FibonacciPipe
+    FibonacciPipe,
+    HighlightDirective,
+    UsersListComponent,
+    TodoComponent,
+    TodoListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
