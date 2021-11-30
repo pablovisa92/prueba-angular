@@ -19,7 +19,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@todo/*":["src/app/todo/*"],
+      "@core/*":["src/app/core/*"],
+      "@shared/*":["src/app/shared/*"],
+      "@basic/*":["src/app/basic/*"],
+      "@users/*":["src/app/users/*"],
+      "@products/*":["src/app/products/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

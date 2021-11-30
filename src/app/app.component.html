@@ -1,62 +1,9 @@
-<!-- <h1>{{ title }}</h1>
-
-<p>{{ 1 + '1' }}</p>
-
-<button (click)="changeTitle()">cambiar titulo</button>
-
-<input type="text" [(ngModel)] = 'rockBandName' (keydown.enter)="addRockBand()"> {{ rockBandName }}
-<h1>{{ rockBandName }}</h1>
-<button (click)="addRockBand()">agregar titulo</button>
-<button (click)="empty()">empty</button>
-
-<ul>
-    <li *ngIf="rockBands.length === 0">
-        No hay bandas de rock
-    </li>
-    <li *ngFor="let rock of rockBands; index as i">
-        {{ rock }}{{ i + 1 }}
-        <strong *ngIf="i === 0">este es el primero</strong>
-        <button (click)="deleteItem(i)">Delete</button>
-        <button (click)="updateItem(i)">Update</button>
-    </li>
-</ul>
-
- <div *ngIf="rockBandName === 'nicolas'">
-    Es Nicolas
-</div>
-
-<div *ngIf="rockBandName === 'julian'">
-    Es Julian
-</div>
-
-<div *ngIf="rockBandName === 'nicolas'">
-    Es Nicolas
-</div>
-
-<div *ngIf="rockBandName === 'camilo'">
-    Es Camilo
-</div> 
-
-<div [ngSwitch]="rockBandName">
-    <p *ngSwitchCase="'nicolas'">Es Nicolas</p>
-    <p *ngSwitchCase="'julian'">Es Julian</p>
-    <p *ngSwitchDefault>No hay coincidencia</p>
-</div>
-
-<ul>
-    <li *ngFor="let user of users">
-        Nombre: {{ user.name }}
-        Edad: {{ user.age }}
-        Soltero: {{ user.isSingle ? 'Si' : 'No' }}
-        image: {{ user.avatar }}
-        <img [src]="user.avatar" alt="">
-    </li>
-</ul>
-
-<app-product-list></app-product-list> -->
-
-<!-- <app-list></app-list> -->
-
-<!-- <app-users-list></app-users-list> -->
-
-<app-todo-list></app-todo-list>
+<nav>
+    <ul>
+        <li><a routerLink="/basic">Basic</a></li>
+        <li><a routerLink="/products">Products</a></li>
+        <li><a routerLink="/todos">Todos</a></li>
+        <li><a routerLink="/users">Users</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
